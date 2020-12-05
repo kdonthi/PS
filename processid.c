@@ -104,8 +104,7 @@ int main (int argc, char *argv[])
 		getcwd(cwdarray,sizeof(cwdarray));		//gets current working directory
 		if ((eprochold.e_tdev != NODEV && (prochold.p_flag & P_CONTROLT) != 0) 						//used to figure out if controlled by terminal
 				&& prochold.p_sigcatch != 0 && eprochold.e_tpgid != 0 && eprochold.e_pcred.p_svuid != 0)	//additional filters to make it get same processes as ps
-		{	printf("pid: %lu, tty: %s, cmd: %s, cwd: %s\n", (long) prochold.p_pid, ttycreator(kp[i].kp_eproc.e_tdev), prochold.p_comm, cwdarray);
-			printf("cmd?: %s", kp[i].cmdline); }
+			printf("pid: %lu, tty: %s, cmd: %s, cwd: %s\n", (long) prochold.p_pid, ttycreator(kp[i].kp_eproc.e_tdev), prochold.p_comm, cwdarray);
 	}
 }
 
