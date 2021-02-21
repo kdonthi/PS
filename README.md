@@ -3,6 +3,9 @@ Partial implementation of the "ps" Linux command (https://man7.org/linux/man-pag
 
 Compile using `gcc processid.c` and run using `./a.out`. </br>
 
-#Fields:#
-</textbullet> ```pid``` - Process ID </br>
+Fields: </br>
+ ```pid``` - Process ID </br>
+ ```tty``` - Terminal ID </br>
+ ```cmd``` - Gives information about the process </br>
+ ```cwd``` - Gives the current working directory the excutable is in </br>
 
