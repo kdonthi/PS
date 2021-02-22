@@ -1,4 +1,4 @@
-# Running Process Idenitifier
+# Running Process Identifier
 Partial implementation of the ```ps``` Linux command (https://man7.org/linux/man-pages/man1/ps.1.html) in C.
 
 Compile using `gcc processid.c` and run using `./a.out` to see information about your running processes. </br>
